@@ -14,6 +14,7 @@ Essayez de synthétiser en binôme votre compréhension de la notion que vous av
 
 Noha - POO
 
+```python
 class Pet:
 	def __init__(self, name, greeting = "Hello"):
 		self.name = name
@@ -28,11 +29,14 @@ class Cat(Pet):
 
 my_pet = Pet("Gaston")
 my_pet.say_hi()
+```
 
 Ce code en python affiche "Hello, I'm Gaston!"
 Et si je rajoute ces 2 lignes
 
+```python
 cat = Cat("Félix")
 cat.say_hi()
+```
 
 Le code m'affiche "Hello, I'm Gaston!" à la ligne "Meow, I'm Félix"
