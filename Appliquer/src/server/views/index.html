@@ -1,0 +1,16 @@
+<%- include('header.html') %>
+		<div class="container">
+			<div class="container">
+				<h1>Coucou, <%= user %> :)</h1>
+				<p>Voila un petit message pour vous rappeler que vous &ecirc;tes quelqu'un de bien.</p>
+				<blockquote class="blockquote">
+					<p id='quote' class="mb-0"></p>
+					<footer id='quote-author' class="blockquote-footer"></footer>
+				</blockquote>
+			</div>
+			<div class="container">
+				<a href="/new-quote">Envie d'ajouter votre propre citation ?</a>
+			</div>
+		</div>
+		<script src="/js/script.js"></script>
+<%- include('footer.html') %>
