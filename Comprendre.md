@@ -64,3 +64,47 @@ parrot.say_hi()
 
 Le code affiche alors :
 "Ouïe, my name is Pinpin!"
+
+```python
+class Pet:
+	legs = 2
+
+	def __init__(self, name, greeting = "Hello", legs = 2):
+		self.name = name
+		self.greeting = greeting
+		self.legs = legs
+		# self.legs = cls.legs
+
+	def say_hi(self):
+		print(f"{self.greeting}, I'm {self.name}!")
+
+	@classmethod
+	def legs_count(cls):
+		return cls.legs
+
+class Cat(Pet):
+	legs = 4
+
+	def __init__(self, name):
+		super().__init__(name, "Meow", 4)
+
+class Parrot(Pet):
+	legs = 2
+
+	def __init__(self, name):
+		super().__init__(name, "Ouïe", 2)
+
+	def say_hi(self):
+		print(f"{self.greeting}, my name is {self.name}!")
+
+print(Cat.legs_count())
+print(Parrot.legs_count())
+
+# cat = Cat("Félix")
+# cat.say_hi()
+# print(cat.legs_count())
+
+# parrot = Parrot("Pinpin")
+# parrot.say_hi()
+# print(parrot.legs_count())
+```
