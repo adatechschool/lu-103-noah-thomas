@@ -86,13 +86,13 @@ class Cat(Pet):
 	legs = 4
 
 	def __init__(self, name):
-		super().__init__(name, "Meow", 4)
+		super().__init__(name, "Meow", legs)
 
 class Parrot(Pet):
 	legs = 2
 
 	def __init__(self, name):
-		super().__init__(name, "Ouïe", 2)
+		super().__init__(name, "Ouïe", legs)
 
 	def say_hi(self):
 		print(f"{self.greeting}, my name is {self.name}!")
