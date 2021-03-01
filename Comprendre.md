@@ -31,12 +31,36 @@ my_pet = Pet("Gaston")
 my_pet.say_hi()
 ```
 
-Ce code en python affiche "Hello, I'm Gaston!"
-Et si je rajoute ces 2 lignes
+Ce code en python affiche : 
+"Hello, I'm Gaston!"
+
+Et si je rajoute ces 2 lignes :
 
 ```python
 cat = Cat("Félix")
 cat.say_hi()
 ```
 
-Le code m'affiche "Hello, I'm Gaston!" à la ligne "Meow, I'm Félix"
+Le code m'affiche :
+"Hello, I'm Gaston!"
+"Meow, I'm Félix!"
+
+Je crée ensuite la classe Parrot avec une fonction say_hi perso :
+
+```python
+class Parrot(Pet):
+	def __init__(self, name):
+		super().__init__(name, "Ouïe")
+	def say_hi(self):
+		print(f"{self.greeting}, my name is {self.name}!")
+```
+
+Et je crée un nouveau lapin : 
+
+```python
+parrot = Parrot("Pinpin")
+parrot.say_hi()
+```
+
+Le code affiche alors :
+"Ouïe, my name is Pinpin!"
