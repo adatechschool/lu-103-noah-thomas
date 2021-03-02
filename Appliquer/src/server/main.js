@@ -37,7 +37,7 @@ app.listen(port, ()=>{
 
 
 const newQuote = (body) => {
-    fs.appendFile('data/db.json',JSON.stringify(body)+"\n",(e)=>{
+    fs.appendFile('public/data/db.json',JSON.stringify(body)+"\n",(e)=>{
         if (e) throw e;
         console.log(`Added ${JSON.stringify(body)} to database.`);
     })
